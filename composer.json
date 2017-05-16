@@ -1,0 +1,29 @@
+{
+    "name": "rohan/dynamic-form-builder",
+    "description": "Dynamic Form Builders by reading config files",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rohan Jalil",
+            "email": "rohan.jalil@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/http": "5.4.*",
+        "illuminate/routing": "5.4.*",
+        "illuminate/session": "5.4.*",
+        "illuminate/support": "5.4.*",
+        "illuminate/view": "5.4.*",
+        "laravelcollective/html": "^5.3"
+    },
+    "autoload": {
+        "files": [
+            "src/Helper/FormHelper.php"
+        ],
+        "psr-4": {
+            "Rohan\\DynamicFormBuilder\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
