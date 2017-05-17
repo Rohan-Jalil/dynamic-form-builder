@@ -13,7 +13,7 @@
 
         <label for="@php getFieldID($k, $field); @endphp">
             @if (isset($field['required']) && $field['required'] && !(isset($field['readonly']) && $field['readonly']))
-                <span class="required">*</span>
+                <span>*</span>
             @endif
 
             @if(isset($field['label']) && $field['label'])

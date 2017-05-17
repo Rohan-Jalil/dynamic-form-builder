@@ -134,7 +134,12 @@ function getFormFieldAttributes($field, $fieldId)
 
     if (isset($field['required']))
     {
-        $attributes['required'] = $field['required'];
+		$attributes['class'] = $attributes['class']. " required";
+    }
+	
+	if (isset($field['html-required-attribute']))
+    {
+		$attributes['required'] = 1;
     }
 
     return $attributes;
